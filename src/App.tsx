@@ -180,7 +180,7 @@ export default function App() {
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
                       <div className="bg-white/90 backdrop-blur p-4 rounded-2xl shadow-sm border border-slate-200">
                         <FileText size={40} className="text-blue-600 mb-2 mx-auto" />
-                        <p className="text-sm font-semibold text-slate-800 truncate max-w-[200px]">{file?.name}</p>
+                        <p className="text-sm font-semibold text-slate-800 truncate max-w-50">{file?.name}</p>
                         <p className="text-xs text-slate-500">
                           {lang === 'en' ? 'Click to change file' : 'فائل تبدیل کرنے کے لیے کلک کریں'}
                         </p>
@@ -319,7 +319,7 @@ export default function App() {
                 <motion.div 
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="h-full min-h-[400px] border-2 border-dashed border-slate-200 rounded-3xl flex flex-col items-center justify-center text-center p-8 bg-slate-50/50"
+                  className="h-full min-h-100 border-2 border-dashed border-slate-200 rounded-3xl flex flex-col items-center justify-center text-center p-8 bg-slate-50/50"
                 >
                   <Activity size={48} className="text-slate-300 mb-4" />
                   <p className="text-slate-400 font-medium mb-3">
@@ -340,7 +340,7 @@ export default function App() {
                 <motion.div 
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="h-full min-h-[400px] flex flex-col items-center justify-center p-8 space-y-6"
+                  className="h-full min-h-100 flex flex-col items-center justify-center p-8 space-y-6"
                 >
                   <div className="relative">
                     <div className="w-20 h-20 border-4 border-blue-100 border-t-blue-600 rounded-full animate-spin" />
